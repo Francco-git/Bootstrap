@@ -1,4 +1,15 @@
+html {
+scroll-behavior: smooth;
+}
 .tamanho {
     width: 48px !important; height: 48px!important;
 }
 
+#carouselExampleFade{
+    height: 420px;
+    overflow: hidden;
+}
+
+.fundo{
+    background: #fc8c64;
+}
