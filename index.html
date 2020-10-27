@@ -2,114 +2,287 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <!--Link para pegar o estilo CSS dos servidores do bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <!--Link para pegar o estilo CSS dos servidores do bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-      <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .tm-social {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
 
 </head>
 
 <body>
-    <!--MENU-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand" href="#">AdotaPet</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <!--MENU-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <a class="navbar-brand" href="#">AdotaPet</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <h1 class="logo"><img src="dog.png"class="tamanho" alt="dog.png"> </h1>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-light" href="#">Pets <span class="sr-only">(página atual)</span></a>
-                </li>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <h1 class="logo"><img src="dog.png" class="tamanho" alt="dog.png"> </h1>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">Pets <span class="sr-only">(página atual)</span></a>
+        </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Achados e Perdidos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Facebook</a>
-                        <a class="dropdown-item" href="#">Instagram</a>
-                        <a class="dropdown-item" href="#">Twitter</a>
-                        <div class="dropdown-divider"></div>
-                    </div>
-                </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Achados e Perdidos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Facebook</a>
+            <a class="dropdown-item" href="#">Instagram</a>
+            <a class="dropdown-item" href="#">Twitter</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+  <!--/MENU-->
+
+  <!--Carousel-->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://noticiasdemogi.com.br/wp-content/uploads/2019/10/adocao-caes.jpg"
+          alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://blog.abacashi.com/wp-content/uploads/2020/03/original-4da50a47bc54f77838873eac1af73983-940x626.jpg"
+          alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://blog.abacashi.com/wp-content/uploads/2020/05/original-1930c9b39fc6edd72d0743f14ae96ece-940x626.jpg"
+          alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <!--/Carousel-->
+
+  <!--Cards-->
+  <div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top"
+          src="https://brasil123.com.br/wp-content/uploads/2020/06/cachorro-com-l%C3%A1grimas-nos-olhos-1024x682.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Luigi (Viralata)</h5>
+          <p class="card-text">luigi é um cãozinho bem calmo mas muito brincalhão está conosco a 6 meses, e quer um lar.
+          </p>
         </div>
-    </nav>
-    <!--/MENU-->
-
-
-    <!--GRID-->
-    <div class="container-fluid">
-
-        <div class="row mt-5 d-flex justify-content-center">
-            <div class="col-md-1 p-0">
-                <div class="bg-dark">1 coluna</div>
-            </div>
-
-            <div class="col-md-1 p-0">
-                <div class="bg-danger">2 coluna</div>
-            </div>
-    
-            <div class="col-md-1 p-0">
-                <div class="bg-info">3 coluna</div>
-            </div>
-    
-            <div class="col-md-1 p-0">
-                <div class="bg-warning">4 coluna</div>
-            </div>
-    
-            <div class="col-md-1 p-0">
-                <div class="bg-sucess">5 coluna</div>
-            </div>
-        
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
         </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top"
+          src="https://meuamigopet.com.br/wp-content/uploads/2020/05/Cachorro-Dalmata-adulto-1024x682.jpg"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Leon (Dálmata)</h5>
+          <p class="card-text">Esse é o Leon nosso pintadinho mais querido,está conosco a 1 ano, uma qualidade
+            importante é seu instinto protetor.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_IylN_iCeKPy1GYCWHEHO3aBgz4aPXlb6Pg&usqp=CAU"
+          alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Pedrita (Shih tzu)</h5>
+          <p class="card-text">Essa é a pedrita está conosco a 3 meses, é uma cachorrinha muito autentica adora latir
+            para tudo, mas se você fizer um carinho ela se derrete toda.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Atualizados 3 minutos atrás</small>
+        </div>
+      </div>
+    </div>
 
-        
-    
 
+
+    <!--/Cards-->
+
+    <!--Texto e Video-->
+
+    <div class="row mt-5 mb-5">
+      <div class="col-md-6">
+        <h3>Por que adotar um pet ?</h3>
+        <p> Adotar um pet é uma decisão importante: ele será um novo integrante da família e, como qualquer novo membro,
+          precisará se adaptar com a casa e a casa com ele. Requer cuidado, atenção, carinho e dedicação, e a adoção
+          responsável tem sido cada vez mais pautada pelas ONGs e cuidadores responsáveis por gerir esse encontro entre
+          tutores e bichinhos. Porém, mais do que tudo, seja um cão ou um gato, adotar é um ato de amor! Se você ainda
+          está na dúvida se deve dar esse passo ou não, trouxemos uma lista cheia de motivos para transformar sua casa
+          num lar muito acolhedor para um novo amigo de quatro patas.</p>
+
+        <p>Animais são companheiros leais e fiéis. Os cachorros já possuem essa fama de longa data, mas os felinos
+          também são grandes amigos e, apesar de desconfiados, quando conquistada a sua lealdade ela é eterna. Ter um
+          bichinho é ter um grande amigo para te acompanhar em todas as aventuras - e nos momentos tristes também.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZjeCpsIqyo" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+
+    <!--/Texto e Video-->
+
+    <!--Formulário de Contato-->
+
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <h4 class="text-center">
+          Entre em contato com a gente
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Envie sua dúvida para a gente </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-outline-danger d-flex justify-content-center">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2861354738084!2d-46.796581285020274!3d-23.66572328463114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce530e78143ce9%3A0x6775620e3d85133f!2sTv.%20da%20R%C3%A9plica%20-%20Jardim%20Irapiranga%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1603761887148!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
     </div>
 
     
 
+    <!--/Formulário de Contato-->
+
+
     
+    <!--Rodapé-->
 
+    <hr>
+
+    <footer>
+      
+      <div class="row mb-3">
+        <div class="col-md-12 d-flex justify-content-center">
+            <a href="https://www.instagram.com/?hl=pt-br" target="_Blank" class="p-3">
+              <img class="tm-social" src="assets/img/instagram.png" alt="Logo do instagram">
+            </a>
+      
+            <a href="https://twitter.com/login?lang=pt" target="_Blank" class="p-3">
+              <img class="tm-social" src="assets/img/twitter.png" alt="Logo do Twitter">
+            </a>
+      
+            <a href="https://www.whatsapp.com/?lang=pt_br" target="_Blank" class="p-3">
+              <img class="tm-social" src="assets/img/whatsapp.png" alt="Logo do whatsapp">
+            </a>
+      
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-m2-12">
+          <p class="text-center">
+            Todos os direitos reservados: Francco La Femina
+          </p>
+        </div>
+      </div>
+      
+      
+  
+  
+  
+    </footer>
     
-
-    
-
-
-    <!--/GRID-->
+    <!--/Rodapé-->
 
 
+  </div>
 
+  
 
 
 
 
-    <!--Scrips necessarios para utilização do codigos JS no Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+ 
+
+
+
+
+
+
+
+
+
+  <!--/GRID-->
+
+
+
+
+
+
+
+  <!--Scrips necessarios para utilização do codigos JS no Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
